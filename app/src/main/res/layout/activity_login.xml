@@ -5,44 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="260sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fruit">
+    </ImageView>
     <EditText
         android:id="@+id/et_id"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
+        android:layout_above="@id/et_pass"
+        android:layout_centerInParent="true"
         android:ems="10"
         android:hint="ID"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/et_pass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass"
+        android:layout_alignLeft="@id/et_pass"
+        android:layout_centerInParent="true"
+        android:text="로그인 정보 기억하기"
+        tools:ignore="TouchTargetSizeCheck" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="140sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/check_box"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/et_pass"
+        android:background="@color/teal_200"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="140sp"
+        android:layout_height="50sp"
+        android:text="Sign up"
+        android:id="@+id/btn_register"
+        android:background="@color/teal_200"
+        android:textAllCaps="false"
+        android:layout_alignRight="@id/et_pass"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/btn_login"
+        android:layout_alignEnd="@+id/et_pass" />
+
+    <Button
+        android:id="@+id/btn_none_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="Password"
-        android:layout_below="@id/et_id"
-        android:inputType="textPersonName"
-        android:text="Name" />
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="313dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="186dp"
-        android:layout_marginBottom="265dp"
-        android:text="Button" />
+        android:background="@color/white"
+        android:text="메인화면" />
+
 </RelativeLayout>

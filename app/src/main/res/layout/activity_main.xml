@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
+    <TableRow>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:id="@+id/image1"
+            android:src="@drawable/persimmon">
+        </ImageView>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:id="@+id/image2"
+            android:src="@drawable/apple">
+        </ImageView>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:text="감"
+            android:paddingRight="30sp"
+            android:gravity="center">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text="사과">
+        </CheckBox>
+    </TableRow>
+    <TableRow>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:src="@drawable/pear"
+            tools:ignore="ImageContrastCheck"></ImageView>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:id="@+id/image4"
+            android:src="@drawable/peach">
+        </ImageView>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:text="배"
+            android:paddingRight="30sp"
+            android:gravity="center">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text="복숭아">
+        </CheckBox>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:id="@+id/image5"
+            android:src="@drawable/orange">
+        </ImageView>
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:id="@+id/image6"
+            android:src="@drawable/banana">
+        </ImageView>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:text="귤"
+            android:paddingRight="30sp"
+            android:gravity="center">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/check6"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text="바나나">
+        </CheckBox>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="상품등록(랜덤)"
+            android:id="@+id/btn_set">
+        </Button>
+        <Button
+            android:text="상품삭제"
+            android:id="@+id/btn_del">
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btn_profile"
+            android:text="회원정보"
+            tools:ignore="TouchTargetSizeCheck"></Button>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginTop="70dp"
-        android:text="TextView" />
-
-</RelativeLayout>
+        <Button
+            android:id="@+id/btn_logout"
+            android:text="로그아웃"
+            tools:ignore="TouchTargetSizeCheck"></Button>
+    </TableRow>
+</TableLayout>
